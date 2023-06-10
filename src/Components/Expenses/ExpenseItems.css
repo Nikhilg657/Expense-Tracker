@@ -1,0 +1,45 @@
+.expenses{
+    /* margin: 5rem ; */
+    padding: 1rem;
+    background-color: rgb(94, 92, 92);
+    /* border: 5px grey solid; */
+    border-radius: 15px;
+    font-size: 2rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 10rem;
+    /* border: 2px red solid; */
+    /* padding: 0px 25px; */
+    background-color: rgb(94, 92, 92);
+}
+.title{
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex:1;
+    padding: 0px 2rem;
+    font-weight: 600;
+    font-size: 2.5rem;
+    /* margin-right: 15rem; */
+    background-color: rgb(94   , 92,92);
+}
+.amount{
+    color: white;
+    border: 2px white solid;
+    width: 10rem;
+    /* justify-content: center;
+    align-items: center; */
+    border-radius: 15px;
+    background-color: rgb(76, 0, 142);
+    padding: 1rem 2.5rem;
+}

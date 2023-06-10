@@ -1,0 +1,12 @@
+.chart-box{
+    height: 10rem;
+    background-color: rgb(128, 57, 128);
+    border-radius: 3rem;
+    margin: 1rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    /* flex: auto; */
+    justify-content: space-evenly;
+}
