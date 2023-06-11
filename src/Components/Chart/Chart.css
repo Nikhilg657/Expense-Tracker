@@ -1,7 +1,6 @@
 .chart-box{
-    height: 10rem;
     background-color: rgb(128, 57, 128);
-    border-radius: 3rem;
+    border-radius: 1rem;
     margin: 1rem;
     padding: 2rem 3rem;
     display: flex;
@@ -9,4 +8,16 @@
     flex-wrap: wrap;
     /* flex: auto; */
     justify-content: space-evenly;
+}
+@media screen and (max-width:800px) {
+    .chart-box{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        
+        padding: 1rem 1rem;
+        padding-bottom: 0.25rem;
+        border-radius: 1rem;
+        height: 250px;
+    }
+    
 }

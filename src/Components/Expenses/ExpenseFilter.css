@@ -24,3 +24,30 @@
     border-radius: 6px;
     font-size: 1.5rem;
   }
+  @media screen and (max-width:800px) {
+    .expenses-filter label{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .expenses-filter select{
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 0.35rem 1.3rem;
+    }
+    
+}
+  @media screen and (max-width:300px) {
+    .expenses-filter__control{
+      flex-direction: column;
+    }
+    .expenses-filter label{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .expenses-filter select{
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 0.35rem 0.8rem;
+    }
+    
+}
