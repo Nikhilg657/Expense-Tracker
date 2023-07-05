@@ -10,20 +10,20 @@
     display: flex;
     flex-direction: column-reverse;
     width: 1rem;
-    background-color: yellow;
+    background-color: rgb(223, 243, 207);
     border: 2px solid black;
     border-radius: 1rem;
 }
-.chartbar-fill{
-    background-color: red;
+.chartbar-fill{ 
+    background-color: purple;
     width: 100%;
     /* border-radius: 1rem; */
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius:1rem;
 }
 .chartbar-label{
-    color: white;
-    font-weight: 400;
+    
+    font-weight: 600;
     font-size: medium;
 }
 @media screen and (max-width:800px) {

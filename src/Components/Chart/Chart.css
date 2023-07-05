@@ -1,6 +1,7 @@
 .chart-box{
-    background-color: rgb(128, 57, 128);
-    border-radius: 1rem;
+    background-color: rgb(216, 166, 231);
+    border: 2px solid rgb(164, 163, 163);
+    border-radius: 0.5rem;
     margin: 1rem;
     padding: 2rem 3rem;
     display: flex;

@@ -1,6 +1,7 @@
 import Expenses from './Components/Expenses/Expense';
 import NewExpense from './Components/NewExpenses/NewExpense';
 import React,{useState} from 'react';
+import './app.css';
 const originalExpenses=[
   {id:1,
   title:'Car Insuarance',
@@ -34,6 +35,7 @@ function App() {
   };
   return (
     <div>
+      <h1 className='webtitle'>Expense Tracker</h1>
       <NewExpense newDataApp={newDataFromNewExpense}/>
       <Expenses items={expenses} />
     </div>

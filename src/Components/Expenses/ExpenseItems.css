@@ -1,9 +1,10 @@
 .expenses{
     /* margin: 5rem ; */
     padding: 1rem;
-    background-color: rgb(94, 92, 92);
+    background-color: rgb(216, 166, 231);
     /* border: 5px grey solid; */
-    border-radius: 15px;
+    border: 2px solid rgb(160, 158, 158);
+    border-radius: 0.5rem;
     font-size: 2rem;
     font-weight: 300;
     display: flex;
@@ -19,20 +20,20 @@
     width: 10rem;
     /* border: 2px red solid; */
     /* padding: 0px 25px; */
-    background-color: rgb(94, 92, 92);
+    background-color: rgb(229, 204, 249);
 }
 .title{
-    color: white;
+    color: rgb(57, 55, 60);
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-end;  
     /* flex:1; */
     padding: 0px 2rem;
     font-weight: 600;
     font-size: 2.5rem;
     width: 300px;
     /* margin-right: 15rem; */
-    background-color: rgb(94,92,92);
+    background-color: rgb(216, 166, 231);
 }
 .amount{
     color: white;
@@ -41,7 +42,7 @@
     /* justify-content: center;
     align-items: center; */
     border-radius: 15px;
-    background-color: rgb(76, 0, 142);
+    background-color: rgb(128,0,128);
     padding: 1rem 2.5rem;
 }
 @media screen and (max-width:800px) {

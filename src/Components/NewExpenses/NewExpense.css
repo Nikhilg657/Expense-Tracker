@@ -1,11 +1,10 @@
 .newexpense{
-    background-color: rgb(157, 105, 202);
+    background-color: rgb(232, 199, 247);
     margin: 2rem;
-    border-radius: 25px;
+    border-radius: 15px;
     height: 15rem;
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* padding: 2rem; */
+    border: 2px solid rgb(164, 163, 163);
+    box-shadow: 0 2px 2px 3px rgba(155, 150, 150, 0.26);
 }
 @media screen and (max-width:800px) {
     .newexpense{
