@@ -1,7 +1,7 @@
 .expenses{
     /* margin: 5rem ; */
     padding: 1rem;
-    background-color: rgb(216, 166, 231);
+    background-color: rgb(213, 153, 232);
     /* border: 5px grey solid; */
     border: 2px solid rgb(160, 158, 158);
     border-radius: 0.5rem;
@@ -33,7 +33,7 @@
     font-size: 2.5rem;
     width: 300px;
     /* margin-right: 15rem; */
-    background-color: rgb(216, 166, 231);
+    background-color: rgb(213, 153, 232);
 }
 .amount{
     color: white;
