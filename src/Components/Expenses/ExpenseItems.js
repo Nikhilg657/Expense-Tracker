@@ -12,8 +12,8 @@ const ExpenseItems=(props)=>{
     return (
         <Cards className='expenses'>
             <ExpenseDate date={props.date}/>
-            <div className='title'>{expenseTitle}</div>
-            <div className='amount'>${expenseAmount}</div>
+            <div data-aos="fade-up" className='title'>{expenseTitle}</div>
+            <div data-aos="fade-up" className='amount'>${expenseAmount}</div>
             {/* <button>Update title</button> */}
         </Cards>
     );

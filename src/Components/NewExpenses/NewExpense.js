@@ -5,7 +5,7 @@ const NewExpense=(props)=>{
         props.newDataApp(data);
     }
     return (
-        <div className="newexpense">
+        <div data-aos="fade-down" data-aos-delay="100" className="newexpense">
             <ExpenseForm newdata={newDataFromForm}/>
         </div>
     );

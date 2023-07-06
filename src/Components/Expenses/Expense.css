@@ -5,6 +5,8 @@
     border-radius: 15px;
     border: 2px solid rgb(164, 163, 163);
     margin: 2rem;
+    justify-content: center;
+    align-items: center;
     box-shadow: 2px 2px 2px 3px rgba(155, 150, 150, 0.26);
 }
 @media screen and (max-width:800px) {

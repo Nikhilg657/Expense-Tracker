@@ -4,7 +4,7 @@ const ExpenseDate=(props)=>{
     const day=props.date.toLocaleString('en-US',{day:'2-digit'});
     const year=props.date.getFullYear();
     return (
-        <div className='date'>
+        <div data-aos="fade-up" className='date'>
                 <div className="month">{month}</div>
                 <div className="day">{day}</div>
                 <div className="year">{year}</div>

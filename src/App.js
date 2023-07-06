@@ -35,7 +35,7 @@ function App() {
   };
   return (
     <div>
-      <h1 className='webtitle'>Expense Tracker</h1>
+      <h1 data-aos="fade-down" className='webtitle'>Expense Tracker</h1>
       <NewExpense newDataApp={newDataFromNewExpense}/>
       <Expenses items={expenses} />
     </div>
