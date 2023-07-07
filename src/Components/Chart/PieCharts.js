@@ -1,27 +1,34 @@
 import React from "react";
-import { PieChart, Pie } from 'recharts';
+import { PieChart, Pie, Tooltip } from 'recharts';
 import './piechart.css';
 
-const PieCharts = () => {
+const PieCharts = (props) => {
   const data=[
-    {name:"January", monthlyExpense:30},
-    {name:"February", monthlyExpense:20},
-    {name:"March", monthlyExpense:20},
-    {name:"April", monthlyExpense:20},
-    {name:"May", monthlyExpense:20},
-    {name:"June", monthlyExpense:20},
-    {name:"July", monthlyExpense:20},
-    {name:"August", monthlyExpense:20},
-    {name:"September", monthlyExpense:20},
-    {name:"October", monthlyExpense:20},
-    {name:"November", monthlyExpense:20},
-    {name:"December", monthlyExpense:20},
+    {name:"January", monthlyExpense:0},
+    {name:"February", monthlyExpense:0},
+    {name:"March", monthlyExpense:0},
+    {name:"April", monthlyExpense:0},
+    {name:"May", monthlyExpense:0},
+    {name:"June", monthlyExpense:0},
+    {name:"July", monthlyExpense:0},
+    {name:"August", monthlyExpense:0},
+    {name:"September", monthlyExpense:0},
+    {name:"October", monthlyExpense:0},
+    {name:"November", monthlyExpense:0},
+    {name:"December", monthlyExpense:0},
   ]
+  for (const expense of props.expenses) {
+    // yearlyamount+=expense.amount;
+    const expenseMonth = expense.date.getMonth(); // starting at 0 => January => 0
+    data[expenseMonth].monthlyExpense += expense.amount;
+  }
   // const colour=generateJustOneColor();
   return (
     <PieChart className='piechart' width={250} height={250}>
+      <Tooltip/>
     <Pie data={data} dataKey="monthlyExpense" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#3CBDC6" />
-  <Pie data={data} dataKey="monthlyExpense" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#800080" label />
+    <Pie data={data} dataKey="monthlyExpense" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#800080" label />
+
   </PieChart>
     )
 };
