@@ -24,8 +24,8 @@ const PieCharts = (props) => {
   return (
     <PieChart className='piechart' width={300} height={300}>
       <Tooltip/>
-    <Pie data={data} dataKey="monthlyExpense" nameKey="name" cx="50%" cy="50%" outerRadius={45} fill="#3CBDC6" />
-    <Pie data={data} dataKey="monthlyExpense" nameKey="name" cx="50%" cy="50%" innerRadius={55} outerRadius={75} fill="#800080"  />
+    <Pie data={data} dataKey="monthlyExpense" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#3CBDC6" />
+    <Pie data={data} dataKey="monthlyExpense" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#800080"  />
 
   </PieChart>
     )
