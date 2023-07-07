@@ -11,8 +11,6 @@ const ChartBar=(props)=>{
         <div className='chart-Bar'>
             <div className='chartbar-inner'>
                 <div className='chartbar-fill' style={{height: barfilled}}> 
-                {/* innerbracket is because react require an object when setting style dynamically */}
-                {/* i.e. inner brackets are representing object */}
 
                 </div>
             </div>

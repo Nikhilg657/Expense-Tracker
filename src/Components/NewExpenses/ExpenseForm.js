@@ -8,16 +8,29 @@ const ExpenseForm=(props)=>{
         setExpenseTitle(e.target.value);
     }
     const setAmount=(e)=>{
-        setExpenseAmount(+(e.target.value));
+        setExpenseAmount((e.target.value));
     }
     const setDate=(e)=>{
         setExpenseDate(e.target.value);
     }
     const onSubmitHandler=(e)=>{
         e.preventDefault();
+        if(enteredtitle.trim().length===0)
+        {
+            return;
+        }
+        if(enteredamount.trim().length===0)
+        {
+            return;
+        }
+        if(entereddate.trim().length===0)
+        {
+            return;
+        }
+
         const newData={
             title:enteredtitle,
-            amount: enteredamount,
+            amount: +enteredamount,
             date: new Date(entereddate)
         };
         props.newdata(newData);
@@ -43,7 +56,7 @@ const ExpenseForm=(props)=>{
             <div className="form_content">
                 <button type='submit'>Add Expense</button>
             </div>
-        </div>\
+        </div>
         </form>
         )
     ;

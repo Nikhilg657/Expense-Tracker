@@ -18,7 +18,7 @@ const Chart=(props)=>{
                 label={datapoint.label}
                 />
             ))
-        };
+        }
 
     </div>;
 }
